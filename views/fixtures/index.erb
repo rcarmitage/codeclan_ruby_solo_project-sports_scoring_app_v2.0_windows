@@ -1,0 +1,24 @@
+<head>
+  <title>Ultimate Hackathon League - Fixtures</title>
+</head>
+
+<body>
+  <h1>Fixtures</h1>
+
+  <div class="add-fixture">
+    <p class="btn">
+      <a class="btn" href="/fixtures/new">Add a Fixture</a>
+    </p>
+  </div>
+
+  <% @fixtures.each do |fixture| %>
+    <p><%= fixture.team_a.name %> <i>vs</i> <%= fixture.team_b.name %></p>
+    <p>Winner: <%= fixture.winning_team.name %>!</p>
+    <a class="btn" href="/fixtures/<%= fixture.id %>/edit">Edit</a>
+    <form method="post" action="/fixtures/<%= fixture.id %>/delete">
+      <input type="submit" value="Delete"/>
+    </form>
+    <hr />
+  <% end %>
+
+</body>

@@ -1,0 +1,26 @@
+<head>
+  <title>Ultimate Hackathon League - Teams</title>
+</head>
+
+<body>
+  <h1>Teams</h1>
+
+  <div class="add-team">
+    <p class="btn">
+      <a class="btn-add-team" href="/teams/new">Add a Team</a>
+    </p>
+  </div>
+
+  <div class="teams-container">
+    <% @teams.each do |team| %>
+      <p><b><%= team.name %></b></p>
+      <p>Previous matches: __</p>
+      <a class="btn" href="/teams/<%= team.id %>/edit">Edit</a>
+      <form class= "btn" method="post" action="/teams/<%= team.id %>/delete">
+        <input type="submit" value="Delete"/>
+      </form>
+      <hr />
+    <% end %>
+  </div>
+
+</body>

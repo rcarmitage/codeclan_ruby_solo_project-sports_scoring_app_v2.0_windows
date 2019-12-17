@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ultimate Hackathon League</title>
+
+  <link rel="stylesheet" type="text/css" href="/styles/buttons.css">
+  <link rel="stylesheet" type="text/css" href="/styles/forms.css">
+  <link rel="stylesheet" type="text/css" href="/styles/structure.css">
+  <link rel="stylesheet" type="text/css" href="/styles/tables.css">
+</head>
+<body id="page-container">
+  <div class="header-and-nav">
+    <h1 class="header-title">Ultimate Hackathon League</h1>
+    <h2 class="sponsored-by-codeclan">Sponsored by CodeClan</h2>
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/teams" class="btn">Teams</a>
+        </li>
+        <li>
+          <a href="/fixtures" class="btn">Fixtures</a>
+        </li>
+        <li>
+          <a href="/about" class="btn">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <%= yield %>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2019 Made by Rob</p>
+  </footer>
+</body>
+
+</html>

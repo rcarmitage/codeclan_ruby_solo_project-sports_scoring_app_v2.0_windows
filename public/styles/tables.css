@@ -1,0 +1,21 @@
+table, td, th {
+    width: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    /* border-radius: 15px; */
+    color: var(--dark-blue);
+    text-align: left;
+  }
+  
+  .small-league-table {
+
+  }
+  
+  .full-league-table {
+  
+  }
+  
+  .teams-table {
+    border: 1px;
+  }
+  

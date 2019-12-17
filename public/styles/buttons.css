@@ -1,0 +1,19 @@
+.btn a {
+  background: var(--primary-blue);
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  color: var(--dark);
+  font-size: 0.9rem;
+  box-shadow: var(--shadow);
+}
+  
+.btn a:hover {
+  background: var(--dark);
+  color: var(--primary-blue);
+}
+  
+#btn-add-team {
+  height: 10px;
+  padding: 1px;
+}

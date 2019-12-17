@@ -1,0 +1,158 @@
+/* CSS Variables */
+:root {
+    --primary-blue: #0c80d0;
+    --dark-blue: #005B9A;
+    --dark: #333;
+    --light-blue: #3385ff;
+    --light: #fff;
+    /* --primary-purple: #8600b3;
+    --dark-purple: #4d0066;
+    --light-purple: #ac00e6; */
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+  
+@media(min-width:500px){
+    .header-title {
+      font-size: 3rem;
+      text-align: left;
+      grid-area: header-title;
+      margin: 0;
+    }
+
+    .inspired-by-codeclan {
+        font-size: 0.8rem;
+        grid-area: inspired-by-codeclan;
+        margin: 0;
+    }
+  
+    .main-nav ul {
+        display: grid;
+        grid-gap: 10px;
+        padding: 0;
+        list-style: none;
+        grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .main-nav a {
+        background: var(--primary-blue);
+        display: block;
+        text-decoration: none;
+        padding: 0.3rem 0.4rem;
+        text-align: center;
+        color: var(--dark);
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        box-shadow: var(--shadow);
+    }
+  
+    .main-nav a:hover {
+        background: var(--dark);
+        color: var(--primary-blue);
+    }
+}
+  
+/* Core Styles */
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+  
+body {
+    background: #abcad6;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+  
+img {
+    max-width: 100%;
+}
+  
+#page-container {
+    position: relative;
+    min-height: 90vh;
+}
+  
+#content-wrap {
+    padding-bottom: 1rem;
+}
+  
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 0.5rem;
+    text-align: left;
+    font-size: 0.8rem;
+}  
+  
+/* Homepage Container */
+.homepage-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+      'main-box-a main-box-b';
+    margin-top: 4rem;;
+}
+  
+.homepage-list ul {
+    display: grid;
+    /* grid-gap: 10px; */
+    /* grid-row-end: 20%; */
+    /* padding: 0; */
+    /* list-style-type: none; */
+    grid-template-rows: repeat(4, 1fr);
+}
+  
+.homepage-list a {
+    background: var(--primary-blue);
+    display: block;
+    max-width: 30%;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: left;
+    color: var(--dark);
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    box-shadow: var(--shadow);
+}
+  
+.homepage-list a:hover {
+    background: var(--dark);
+    color: var(--primary-blue);
+}
+  
+/* Header */
+.header {
+    grid-area: header;
+    min-height: 10px;
+    /* background: url(code-blue-and-purple image) */
+    /* background-size: ; */
+    /* background-position: ; */
+    padding: 0.8rem;
+}
+  
+/* Fixtures */
+.team-a-selection {
+    font-size: 0.8rem;
+    color: var(--light-blue)
+    /* grid-area: team-a-selection; */
+}
+  
+.team-b-selection {
+    font-size: 0.8rem;
+    color: var(--dark)
+    /* grid-area: team-b-selection; */
+}
+  
+/* Teams Page */
+.teams-container {
+    display: flex;
+    flex-direction: column;
+}
+  
+/* About Page */
+#about {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+  
