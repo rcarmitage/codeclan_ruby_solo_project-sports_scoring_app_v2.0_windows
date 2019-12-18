@@ -22,8 +22,8 @@
      </tr>
      <tr>
        <td>1</td>
-       <td>Sports Scorers</td>
-       <td>6</td>
+       <td>Team 1 name</td>
+       <td>__</td>
      </tr>
      <tr>
        <td>2</td>
@@ -51,5 +51,10 @@
        <td>0</td>
      </tr>
    </table>
+  </div>
+  <div>
+  <% @teams.each do |team| %>
+    <p><b><%= team.name %></b></p>
+  <% end %>
   </div>
 </section>
