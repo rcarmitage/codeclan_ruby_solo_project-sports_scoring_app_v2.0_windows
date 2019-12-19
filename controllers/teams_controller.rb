@@ -29,7 +29,6 @@ get '/teams/:id/edit' do # edit
 end
   
 post '/teams/:id' do # update
-    # binding.pry
     Team.new(params).update
     redirect to '/teams'
 end
@@ -38,4 +37,8 @@ post '/teams/:id/delete' do # delete
     team = Team.find(params[:id])
     team.delete()
     redirect to '/teams'
+end
+
+get '/league_table' do
+    erb(:"league_table/index")
 end
