@@ -117,3 +117,9 @@ fixture6 = Fixture.new({
 })
 
 fixture6.save()
+
+league_table = LeagueTable.new({
+
+})
+
+league_table.save()
