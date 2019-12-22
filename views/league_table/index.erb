@@ -46,4 +46,12 @@
       </tr>
     </table>
     </div>
+
+    <div class="league-table-container">
+    <% @teams.each do |team| %>
+      <p><b>1. <%= team.name %></b></p>
+      <hr />
+    <% end %>
+  </div>
+
   </section>
