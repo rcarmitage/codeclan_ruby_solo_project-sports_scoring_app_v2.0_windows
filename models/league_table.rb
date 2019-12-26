@@ -9,12 +9,12 @@ class LeagueTable
 attr_reader :name, :played, :won, :lost, :points, :id
 
 def initialize(options)
-  @id = options['id'].to_i if options['id']
-  @name = options['name']
-  @played = options['played'] ? options['played'].to_i : 0
-  @won = options['won'] ? options['won'].to_i : 0
-  @lost = options['lost'] ? options['lost'].to_i : 0
-  @points = options['points'] ? options['points'].to_i : 0
+  @position1 = options['id'].to_i if options['id']
+  @position2 = options['name']
+  @position3 = options['played'] ? options['played'].to_i : 0
+  @position4 = options['won'] ? options['won'].to_i : 0
+  @position5 = options['lost'] ? options['lost'].to_i : 0
+  @position6 = options['points'] ? options['points'].to_i : 0
 end
 
 def save()
