@@ -20,18 +20,19 @@ end
 def save()
     sql = "INSERT INTO teams
     (
-      name,
-      played,
-      won,
-      lost,
-      points
+      position1,
+      position2,
+      position3,
+      position4,
+      position5,
+      position6
     )
     VALUES
     (
-      $1, $2, $3, $4, $5
+      $1, $2, $3, $4, $5, $6
     )
     RETURNING id"
-    values = [@name, @played, @won, @lost, @points]
+    values = [@position1, @position2, @position3, @position4, @position5, @position6]
     results = SqlRunner.run(sql, values)
     @id = results.first()['id'].to_i
 end
