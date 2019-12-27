@@ -118,8 +118,13 @@ fixture6 = Fixture.new({
 
 fixture6.save()
 
-league_table = LeagueTable.new({
+# league_table = LeagueTable.new({
+#   "position1" => team1.id,
+#   "position2" => team2.id,
+#   "position3" => team3.id,
+#   "position4" => team4.id,
+#   "position5" => team5.id,
+#   "position6" => team6.id,
+# })
 
-})
-
-league_table.save()
+# league_table.save()
