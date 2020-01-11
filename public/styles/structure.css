@@ -129,13 +129,18 @@ img {
 }
   
 /* Fixtures */
-.team-a-selection {
+.fixtures-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-a {
     font-size: 0.8rem;
     color: var(--light-blue)
     /* grid-area: team-a-selection; */
 }
   
-.team-b-selection {
+.team-b {
     font-size: 0.8rem;
     color: var(--dark)
     /* grid-area: team-b-selection; */
