@@ -6,6 +6,7 @@ ruby "2.5.7"
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
+gem 'pg'
 gem 'rack'
 gem 'sinatra'
 gem 'require_all'
