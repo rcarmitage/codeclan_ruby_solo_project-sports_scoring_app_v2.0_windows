@@ -32,6 +32,7 @@ GEM
     sinatra-activerecord (2.0.14)
       activerecord (>= 3.2)
       sinatra (>= 1.0)
+    thread_safe (0.3.6)
     thread_safe (0.3.6-java)
     tilt (2.0.10)
     tzinfo (1.2.6)
@@ -39,6 +40,7 @@ GEM
 
 PLATFORMS
   java
+  ruby
 
 DEPENDENCIES
   activerecord (= 5.2.3)
