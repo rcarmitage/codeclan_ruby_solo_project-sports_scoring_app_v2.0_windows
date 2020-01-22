@@ -1,5 +1,4 @@
 require('sinatra')
-# require('sinatra/contrib/all')
 require_relative('controllers/fixtures_controller.rb')
 require_relative('controllers/teams_controller.rb')
 
