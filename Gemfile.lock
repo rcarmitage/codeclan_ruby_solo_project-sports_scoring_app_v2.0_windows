@@ -39,7 +39,6 @@ GEM
 
 PLATFORMS
   java
-  ruby
 
 DEPENDENCIES
   activerecord (= 5.2.3)
