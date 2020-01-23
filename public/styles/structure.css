@@ -135,15 +135,18 @@ img {
 }
 
 .team-a {
-    font-size: 0.8rem;
-    color: var(--light-blue)
+    color: var(--dark);
     /* grid-area: team-a-selection; */
 }
   
 .team-b {
-    font-size: 0.8rem;
-    color: var(--dark)
+    color: var(--dark);
     /* grid-area: team-b-selection; */
+}
+
+.winner {
+    color: var(--primary-blue);
+    font-weight: bolder;
 }
   
 /* Teams Page */
