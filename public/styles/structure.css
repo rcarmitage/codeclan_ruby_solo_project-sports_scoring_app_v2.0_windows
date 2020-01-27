@@ -61,10 +61,6 @@ body {
     line-height: 1.4;
 }
   
-img {
-    max-width: 100%;
-}
-  
 #page-container {
     position: relative;
     min-height: 90vh;
@@ -88,7 +84,7 @@ img {
     grid-gap: 10px;
     grid-template-areas:
       'main-box-a main-box-b';
-    margin-top: 4rem;;
+    margin-top: 4rem;
 }
   
 .homepage-list ul {
@@ -122,26 +118,56 @@ img {
 .header {
     grid-area: header;
     min-height: 10px;
-    /* background: url(code-blue-and-purple image) */
-    /* background-size: ; */
-    /* background-position: ; */
     padding: 0.8rem;
 }
   
 /* Fixtures */
+.fixtures-list {
+    width: 50px;
+}
+
 .fixtures-container {
-    display: flex;
-    flex-direction: column;
+    /* display: grid; */
+}
+
+.fixtures-container-top-row {
+    display: grid;
+    grid-template-columns: 40% 30% 40%;
+    grid-template-areas:
+        "team-a vs team-b";
+    justify-items: center;
+}
+
+.fixtures-container-middle-row {
+    display: grid;
+    grid-template-columns: auto;
+    /* margin: auto; */
+    /* justify-content: center; */
+}
+
+.fixtures-container-bottom-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "btn-edit btn-delete";
 }
 
 .team-a {
+    grid-area: team-a;
     color: var(--dark);
-    /* grid-area: team-a-selection; */
+    font-weight: bolder;
 }
   
 .team-b {
+    grid-area: team-b;
     color: var(--dark);
-    /* grid-area: team-b-selection; */
+    font-weight: bolder;
+}
+
+.vs {
+    grid-area: vs;
+    color: var(--dark);
+    font-style: italic;
 }
 
 .winner {

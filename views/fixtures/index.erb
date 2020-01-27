@@ -11,16 +11,24 @@
     </p>
   </div>
 
-  <div class="fixtures-container">
+  <div class="fixtures-list">
     <% @fixtures.each do |fixture| %>
-      <p class="team-a"><%= fixture.team_a.name %></p>
-      <p><i>vs</i></p>
-      <p class="team-b"><%= fixture.team_b.name %></p>
-      <p class="winner">Winner: <%= fixture.winning_team.name %>!</p>
-      <a class="btn-edit" href="/fixtures/<%= fixture.id %>/edit">Edit</a>
-      <form method="post" action="/fixtures/<%= fixture.id %>/delete" class="btn-delete">
-        <input type="submit" value="Delete"/>
-      </form>
+      <div class="fixtures-container">
+        <div class="fixtures-container-top-row">
+          <section class="team-a"><b><%= fixture.team_a.name %></b></section>
+          <section class="vs"><i>vs</i></section>
+          <section class="team-b"><%= fixture.team_b.name %></section>
+        </div>
+        <div class="fixtures-container-middle-row">
+          <section class="winner">Winner: <%= fixture.winning_team.name %>!</section>
+        </div>
+        <div class="fixtures-container-bottom-row">
+          <a class="btn-edit" href="/fixtures/<%= fixture.id %>/edit">Edit</a>
+          <form method="post" action="/fixtures/<%= fixture.id %>/delete" class="btn-delete">
+            <input type="submit" value="Delete"/>
+          </form>
+        </div>
+      </div>
       <hr />
     <% end %>
   </div>

@@ -1,6 +1,6 @@
 input[type="submit"] {
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: Ariel, Helvetica, sans-serif;
 }
   
 select {
@@ -10,9 +10,10 @@ select {
     font-size: 0.8em;
     -webkit-appearance: none;
     background: white;
-    font-family: sans-serif;
-    border: 1px solid #eee;
-    display: block;}
+    font-family: Ariel, Helvetica, sans-serif;
+    border: none;
+    display: block;
+}
   
 :focus {
     outline-color: transparent;

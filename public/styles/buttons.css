@@ -19,11 +19,29 @@
 }
 
 .btn-edit {
-  height: 10px;
-  padding: 1px;
+  background: var(--primary-blue);
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  font-size: 0.8rem;
+}
+
+.btn-edit:hover {
+  background: var(--dark);
+  color: var(--primary-blue);
 }
 
 .btn-delete {
-  height: 10px;
-  padding: 1px;
+  background: var(--primary-blue);
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  font-size: 0.8rem;
+}
+
+.btn-delete:hover {
+  background: var(--dark);
+  color: var(--primary-blue);
 }
