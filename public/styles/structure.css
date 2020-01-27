@@ -122,17 +122,23 @@ body {
 }
   
 /* Fixtures */
-.fixtures-list {
-    width: 50px;
+.add-fixture {
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .fixtures-container {
-    /* display: grid; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 600px;
+    border: 1px solid var(--dark);
+    box-shadow: var(--shadow);
 }
 
 .fixtures-container-top-row {
     display: grid;
     grid-template-columns: 40% 30% 40%;
+    grid-gap: 10px;
     grid-template-areas:
         "team-a vs team-b";
     justify-items: center;
@@ -140,9 +146,7 @@ body {
 
 .fixtures-container-middle-row {
     display: grid;
-    grid-template-columns: auto;
-    /* margin: auto; */
-    /* justify-content: center; */
+    justify-items: center;
 }
 
 .fixtures-container-bottom-row {
@@ -156,23 +160,35 @@ body {
     grid-area: team-a;
     color: var(--dark);
     font-weight: bolder;
+    padding: 10px;
 }
   
 .team-b {
     grid-area: team-b;
     color: var(--dark);
     font-weight: bolder;
+    padding: 10px;
 }
 
 .vs {
     grid-area: vs;
     color: var(--dark);
+    font-size: 0.9rem;
     font-style: italic;
+    padding: 10px;
 }
 
-.winner {
-    color: var(--primary-blue);
+.winner-text {
+    font-style: italic;
+    padding: 5px;
+}
+
+.winner-team {
+    color: var(--dark-blue);
     font-weight: bolder;
+    border-bottom: 1px solid var(--dark);
+    padding: 5px;
+    margin-bottom: 20px;
 }
   
 /* Teams Page */

@@ -19,6 +19,7 @@
 }
 
 .btn-edit {
+  grid-area: btn-edit;
   background: var(--primary-blue);
   text-decoration: none;
   padding: 0.8rem;
@@ -33,6 +34,7 @@
 }
 
 .btn-delete {
+  grid-area: btn-delete;
   background: var(--primary-blue);
   text-decoration: none;
   padding: 0.8rem;
