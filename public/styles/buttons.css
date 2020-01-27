@@ -5,6 +5,7 @@
   text-align: left;
   color: var(--dark);
   font-size: 0.9rem;
+  text-transform: uppercase;
   box-shadow: var(--shadow);
 }
   
@@ -14,33 +15,86 @@
 }
   
 .btn-add-team {
-  height: 10px;
-  padding: 1px;
+
 }
 
-.btn-edit {
+.btn-edit-fixture {
   grid-area: btn-edit;
   background: var(--primary-blue);
   text-decoration: none;
   padding: 0.8rem;
   text-align: center;
   color: var(--dark);
+  font-size: 0.9rem;
   border-top: 0.5px solid var(--dark);
   border-right: 0.5px solid var(--dark);
 }
 
-.btn-edit:hover {
+.btn-edit-fixture:hover {
   background: var(--dark);
   color: var(--primary-blue);
 }
 
-.btn-delete {
+.btn-delete-fixture {
   grid-area: btn-delete;
   background: var(--primary-blue);
   text-decoration: none;
   padding: 0.8rem;
   text-align: center;
   color: var(--dark);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border-top: 0.5px solid var(--dark);
+}
+
+.btn-delete-fixture:hover {
+  background: var(--dark);
+  color: var(--primary-blue);
+}
+
+.btn-team-details {
+  background: var(--primary-blue);
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  font-size: 0.9rem;
+  text-transform: uppercase; 
+  border-top: 0.5px solid var(--dark);
+}
+
+.btn-team-details:hover {
+  background: var(--dark);
+  color: var(--primary-blue);
+}
+
+.btn-edit-team {
+  grid-area: btn-edit-team;
+  background: var(--primary-blue);
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border-top: 0.5px solid var(--dark);
+  border-right: 0.5px solid var(--dark);  
+}
+
+.btn-edit-team:hover {
+  background: var(--dark);
+  color: var(--primary-blue);
+}
+
+.btn-delete-team {
+  grid-area: btn-delete-team;
+  background: var(--primary-blue);
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  font-size: 0.9rem;
+  text-transform: uppercase;
   border-top: 0.5px solid var(--dark);
 }
 
