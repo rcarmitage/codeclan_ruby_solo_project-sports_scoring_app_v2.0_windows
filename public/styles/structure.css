@@ -131,17 +131,18 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 600px;
-    border: 1px solid var(--dark);
+    border: 0.5px solid var(--dark);
     box-shadow: var(--shadow);
 }
 
 .fixtures-container-top-row {
     display: grid;
-    grid-template-columns: 40% 30% 40%;
+    grid-template-columns: 2fr 1fr 2fr;
     grid-gap: 10px;
     grid-template-areas:
         "team-a vs team-b";
     justify-items: center;
+    padding: 20px;
 }
 
 .fixtures-container-middle-row {
@@ -161,6 +162,7 @@ body {
     color: var(--dark);
     font-weight: bolder;
     padding: 10px;
+    text-align: center;
 }
   
 .team-b {
@@ -168,6 +170,7 @@ body {
     color: var(--dark);
     font-weight: bolder;
     padding: 10px;
+    text-align: center;
 }
 
 .vs {
@@ -181,6 +184,7 @@ body {
 .winner-text {
     font-style: italic;
     padding: 5px;
+    margin-top: 10px;
 }
 
 .winner-team {

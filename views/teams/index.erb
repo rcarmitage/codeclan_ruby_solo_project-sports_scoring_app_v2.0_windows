@@ -11,15 +11,22 @@
     </p>
   </div>
 
-  <div class="teams-container">
+  <div class="teams-list">
     <% @teams.each do |team| %>
-      <p><b><%= team.name %></b></p>
-      <p>Previous matches: __</p>
-      <a class="btn" href="/teams/<%= team.id %>/edit">Edit</a>
-      <form class= "btn" method="post" action="/teams/<%= team.id %>/delete">
-        <input type="submit" value="Delete"/>
-      </form>
-      <hr />
+      <div class="teams-container">
+        <div class="team-top-row">
+          <a class="team-name"><%= team.name %></a>
+        </div>
+        <div class="team-middle-row">
+          <a class="team-fixtures-list">Previous matches: __</a>
+        </div>
+        <div class="team-bottom-row"
+          <a class="btn-edit" href="/teams/<%= team.id %>/edit">Edit</a>
+          <form class="btn-delete" method="post" action="/teams/<%= team.id %>/delete">
+            <input type="submit" value="Delete"/>
+          </form>
+        </div>
+      </div>
     <% end %>
   </div>
 

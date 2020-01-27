@@ -24,8 +24,8 @@
           <a class="winner-team"><%= fixture.winning_team.name %></a>
         </div>
         <div class="fixtures-container-bottom-row">
-          <a class="btn-edit" href="/fixtures/<%= fixture.id %>/edit">Edit</a>
-          <form method="post" action="/fixtures/<%= fixture.id %>/delete" class="btn-delete">
+          <a class="btn-edit" href="/fixtures/<%= fixture.id %>/edit">EDIT</a>
+          <form  class="btn-delete" method="post" action="/fixtures/<%= fixture.id %>/delete">
             <input type="submit" value="Delete"/>
           </form>
         </div>
