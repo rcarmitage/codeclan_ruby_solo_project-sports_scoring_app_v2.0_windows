@@ -17,8 +17,8 @@
       <p><i>vs</i></p>
       <p class="team-b"><%= fixture.team_b.name %></p>
       <p class="winner">Winner: <%= fixture.winning_team.name %>!</p>
-      <a class="btn" href="/fixtures/<%= fixture.id %>/edit">Edit</a>
-      <form method="post" action="/fixtures/<%= fixture.id %>/delete">
+      <a class="btn-edit" href="/fixtures/<%= fixture.id %>/edit">Edit</a>
+      <form method="post" action="/fixtures/<%= fixture.id %>/delete" class="btn-delete">
         <input type="submit" value="Delete"/>
       </form>
       <hr />
