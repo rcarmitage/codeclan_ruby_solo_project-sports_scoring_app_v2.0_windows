@@ -51,9 +51,9 @@ Screenshot
 Status of the app as of 28th January 2020:
 - The framework of the Home, Teams, Fixtures, League Table and About pages is complete. The data is displayed as per the design.
 - The individual Team pages do not show any information other than the Team name. I plan to display all the Fixtures for that Team on this page, displaying whether they won or lost.
-- The Add Fixture functionality is not finished. It initially worked with the user manually typing in the team ID numbers, however recent updates to the app have removed this functionality. I plan to provide a list or dropdown menu with all teams in the database from which the user will select two, and then a winner and a loser from these. The ADD FIXTURE button will post this to the database and the Fixture will be added to the list on the Fixtures page.
+- The Add Fixture functionality is not finished. It initially worked with the user manually typing in the team ID numbers, however recent updates to the app have removed this functionality. I plan to provide a list with all teams in the database from which the user will select two, and then a winner and a loser from these. The ADD FIXTURE button will post this to the database and the Fixture will be added to the list on the Fixtures page.
 - The DELETE button on the Teams page produces an error if the Team has any foreign key entries in the Fixtures table.
-- CSS: There is lots of replication in the structure.css file. I plan to refactor this by giving IDs to many of the elements and bringing the majority of the instructions into a small number of classes. I also plan to finish implementing the buttons.css instructions to the DELETE buttons on the Teams and Fixtures pages.
+- CSS: There is lots of replication in the structure.css file. I plan to refactor this by giving IDs to many of the elements and consolidating the majority of the instructions into a small number of classes. I also plan to finish implementing the buttons.css instructions to the DELETE buttons on the Teams and Fixtures pages.
 - I have tried to upload and display this and version 1.0 on Heroku, however I have had difficulty with gems that have produced errors when trying to push to Heroku. I plan to resolve these errors and display this app for users to test.
 
 ## My learning
