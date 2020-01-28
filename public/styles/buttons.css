@@ -14,10 +14,6 @@
   color: var(--primary-blue);
 }
   
-.btn-add-team {
-
-}
-
 .btn-edit-fixture {
   grid-area: btn-edit;
   background: var(--primary-blue);
@@ -48,6 +44,22 @@
 }
 
 .btn-delete-fixture:hover {
+  background: var(--dark);
+  color: var(--primary-blue);
+}
+
+.btn-add-fixture {
+  background: var(--primary-blue);
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  font-size: 0.9rem;
+  border-top: 0.5px solid var(--dark);
+  border-right: 0.5px solid var(--dark);
+}
+
+.btn-add-fixture:hover {
   background: var(--dark);
   color: var(--primary-blue);
 }
@@ -98,7 +110,23 @@
   border-top: 0.5px solid var(--dark);
 }
 
-.btn-delete:hover {
+.btn-delete-team:hover {
+  background: var(--dark);
+  color: var(--primary-blue);
+}
+
+.btn-add-team {
+  background: var(--primary-blue);
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  font-size: 0.9rem;
+  border-top: 0.5px solid var(--dark);
+  border-right: 0.5px solid var(--dark);
+}
+
+.btn-add-team:hover {
   background: var(--dark);
   color: var(--primary-blue);
 }

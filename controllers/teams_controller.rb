@@ -40,5 +40,6 @@ post '/teams/:id/delete' do # delete
 end
 
 get '/league_table' do
+    @teams = Team.sort_for_league_table()
     erb(:"league_table/index")
 end

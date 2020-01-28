@@ -14,6 +14,10 @@ class Team
     @points = options['points'] ? options['points'].to_i : 0
   end
 
+  def self.sort_data()
+    return null
+  end
+
   def save()
     sql = "INSERT INTO teams
     (
@@ -83,5 +87,11 @@ class Team
     return team_data.map { |team| Team.new(team) }
   end
 
+  def self.sort_for_league_table()
+    sql = "SELECT * FROM teams ORDER BY points DESC"
+    league_table_data = SqlRunner.run(sql)
+    league_table_sorted = map_items(league_table_data)
+    return league_table_sorted
+  end
 
 end
