@@ -6,29 +6,29 @@ Team.delete_all()
 
 team1 = Team.new({
   "name" => "The Gym Bunnies",
-  "played" => 0,
-  "won" => 0,
-  "lost" => 0,
-  "points" => 0
+  "played" => 2,
+  "won" => 1,
+  "lost" => 1,
+  "points" => 1
 })
 
 team1.save()
 
 team2 = Team.new({
   "name" => "Shop Winventory",
-  "played" => 0,
-  "won" => 0,
+  "played" => 2,
+  "won" => 2,
   "lost" => 0,
-  "points" => 0
+  "points" => 2
 })
 
 team2.save()
 
 team3 = Team.new({
   "name" => "Spending Tracker Big Spenders",
-  "played" => 0,
+  "played" => 2,
   "won" => 0,
-  "lost" => 0,
+  "lost" => 2,
   "points" => 0
 })
 
@@ -36,29 +36,29 @@ team3.save()
 
 team4 = Team.new({
   "name" => "Sports Scorers",
-  "played" => 0,
-  "won" => 0,
+  "played" => 2,
+  "won" => 2,
   "lost" => 0,
-  "points" => 0
+  "points" => 2
 })
 
 team4.save()
 
 team5 = Team.new({
   "name" => "Travel Bucket List Jetsetters",
-  "played" => 0,
-  "won" => 0,
-  "lost" => 0,
-  "points" => 0
+  "played" => 2,
+  "won" => 1,
+  "lost" => 1,
+  "points" => 1
 })
 
 team5.save()
 
 team6 = Team.new({
   "name" => "Vet Squad Managers",
-  "played" => 0,
+  "played" => 2,
   "won" => 0,
-  "lost" => 0,
+  "lost" => 2,
   "points" => 0
 })
 
@@ -117,14 +117,3 @@ fixture6 = Fixture.new({
 })
 
 fixture6.save()
-
-# league_table = LeagueTable.new({
-#   "position1" => team1.id,
-#   "position2" => team2.id,
-#   "position3" => team3.id,
-#   "position4" => team4.id,
-#   "position5" => team5.id,
-#   "position6" => team6.id,
-# })
-
-# league_table.save()

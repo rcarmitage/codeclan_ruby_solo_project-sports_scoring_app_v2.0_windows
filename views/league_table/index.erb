@@ -6,7 +6,28 @@
   <h1>League Table</h1>
 
   <div class="league-table-container">
-    
+    <div class="league-table">
+      <div class="league-table-top-row">
+        <a class="league-table-position"></a>
+        <a class="league-table-team-name">Team</a>
+        <a class="league-table-team-played">Played</a>
+        <a class="league-table-team-won">Won</a>
+        <a class="league-table-team-lost">Lost</a>
+        <a class="league-table-team-points">Points</a>
+      </div>
+      <div class="league-table-team-entry">
+        <% counter = 1 %>
+        <% @teams.each do |team| %> 
+          <a class="league-table-position"><%= counter %></a>
+          <a class="league-table-team-name"><%= team.name %></a>
+          <a class="league-table-team-played"><%= team.played %></a>
+          <a class="league-table-team-won"><%= team.won %></a>
+          <a class="league-table-team-lost"><%= team.lost %></a>
+          <a class="league-table-team-points"><%= team.points %></a>
+          <% counter += 1 %>
+        <% end %>
+      </div>
+    </div>
   </div>
 
 

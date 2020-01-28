@@ -228,6 +228,70 @@ body {
     text-align: center;
 }
 
+/* League Table Page */
+.league-table-container {
+    color: var(--dark);
+}
+
+.league-table {
+    border: 0.5px solid var(--dark);
+    width: 600px;
+    box-shadow: var(--shadow);
+}
+
+.league-table-top-row {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "league-table-position league-table-team-name league-table-team-played league-table-team-won league-table-team-lost league-table-team-points";
+    font-weight: bolder;
+}
+
+.league-table-team-entry {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "league-table-position league-table-team-name league-table-team-played league-table-team-won league-table-team-lost league-table-team-points";
+}
+
+.league-table-position {
+    border: 0.5px solid var(--dark);
+    text-align: center;
+    font-weight: bolder;
+}
+
+.league-table-team-name {
+    border: 0.5px solid var(--dark);
+    justify-items: left;
+    padding-left: 2px;
+}
+
+.league-table-team-played {
+    border: 0.5px solid var(--dark);
+    justify-items: center;
+    text-align: center;
+}
+
+.league-table-team-won {
+    border: 0.5px solid var(--dark);
+    justify-items: center;
+    text-align: center;
+}
+
+.league-table-team-lost {
+    border: 0.5px solid var(--dark);
+    justify-items: center;
+    text-align: center;
+}
+
+.league-table-team-points {
+    border: 0.5px solid var(--dark);
+    justify-items: center;
+    text-align: center;
+}
+
 /* About Page */
 #about {
     font-family: Arial, sans-serif;
