@@ -6,7 +6,7 @@ This is version 2.0.
 
 I created version 1.0 using Ruby and Sinatra as my first project during week 5 (August 2019) of the CodeClan Professional Software Development course.
 
-Upon completion of the course I have recreated the app using different languages and frameworks in order to further understand the implementation of functionality and design choices.
+Upon completion of the course I have recreated the app using different languages and frameworks in order to further understand implementation of functionality and design choices.
 
 Since version 1.0 was created using a Mac I felt it would be beneficial to recreate it on Windows from scratch. I began work on version 2.0 in December 2019.
 
@@ -29,9 +29,27 @@ A user should be able to…
 - Create a league table to see who is on top of the league
 - Self-selected extension: Add "Play a Game" functionality, i.e. the user would select two teams and the app would select a winner from these
 
-## Installation After Pulling from GitHub
+## Running the App After Pulling from GitHub
 
-- 
+Create a database called sports_scoring_app using PostgreSQL
+
+```
+createdb sports_scoring_app
+```
+
+Navigate to __/db then link the sports_scoring_app database to sports_scoring_app.sql
+
+```
+psql -d sports_scoring_app -f sports_scoring_app.sql
+```
+
+Launch Sinatra and create the web environment
+
+```
+ruby app.rb
+```
+
+Browse to [http://localhost:4567](http://localhost:4567)
 
 ## How it works and what it does
 
@@ -51,7 +69,7 @@ Screenshot
 Status of the app as of 28th January 2020:
 - The framework of the Home, Teams, Fixtures, League Table and About pages is complete. The data is displayed as per the design.
 - The individual Team pages do not show any information other than the Team name. I plan to display all the Fixtures for that Team on this page, displaying whether they won or lost.
-- The Add Fixture functionality is not finished. It initially worked with the user manually typing in the team ID numbers, however recent updates to the app have removed this functionality. I plan to provide a list with all teams in the database from which the user will select two, and then a winner and a loser from these. The ADD FIXTURE button will post this to the database and the Fixture will be added to the list on the Fixtures page.
+- The Add Fixture functionality is not finished. It initially worked with the user manually typing in the team ID numbers, however recent updates to the app have removed this functionality. I plan to provide a list with all teams in the database from which the user will select two, and then a winner and a loser from these. The ADD FIXTURE button will post this to the database and the Fixture will be added to the list on the Fixtures page. This will also increase the Teams' played, won, lost and points entries as appropriate, which will update the League Table.
 - The DELETE button on the Teams page produces an error if the Team has any foreign key entries in the Fixtures table.
 - CSS: There is lots of replication in the structure.css file. I plan to refactor this by giving IDs to many of the elements and consolidating the majority of the instructions into a small number of classes. I also plan to finish implementing the buttons.css instructions to the DELETE buttons on the Teams and Fixtures pages.
 - I have tried to upload and display this and version 1.0 on Heroku, however I have had difficulty with gems that have produced errors when trying to push to Heroku. I plan to resolve these errors and display this app for users to test.
@@ -62,3 +80,4 @@ Status of the app as of 28th January 2020:
 - I was able to spend more time on the presentation of the app after the course than I could during the 6-day project timeframe during the course. The data for the Teams and Fixtures pages was displayed in version 1.0, and in version 2.0 I was able to present it more clearly for the benefit of the user.
 - I created the League Table using an SQL query to sort the data by Points and then listing this in a CSS grid. I came up against some barriers in getting the data to display on the page but I am pleased that my initial method of achieving this task and the content of my SQL query were sound, and the difficulties came from unexpected lags in changes showing up through Sinatra. Once I had moved past these it was straightforward to complete the League Table and present the data as per my original design.
 - Combining information from the notes provided by CodeClan with that from other sources (documentation, blogs, video tutorials) helped me contextualise my knowledge and start to understand the wider implementation of Ruby, Sinatra and general programming principles.
+- I have more faith in my ability to complete a project to a good standard. I became stuck on a few areas and found ways to complete the tasks by thinking about different ways to solve the problem or trying to understand the gaps in my knowledge.
