@@ -117,6 +117,11 @@ body {
 
 .homepage-text {
     text-align: left;
+    margin-top: 40px;
+    margin-right: 50px;
+    padding: 15px;
+    border: 0.5px solid var(--dark);
+    box-shadow: var(--shadow);
 }
   
 /* Header */
