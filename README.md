@@ -82,9 +82,6 @@ ruby db/seeds.rb
 
 ![](readme_images/screenshot04-league-table.png)
 
-
-
-
 Status of the app and plans for further development as of 29th January 2020:
 - The framework of the Home, Teams, Fixtures, League Table and About pages is complete. The data is displayed as per the design.
 - The individual Team pages do not show any information other than the Team name. I plan to display all the Fixtures for that Team on this page, displaying whether they won or lost.
