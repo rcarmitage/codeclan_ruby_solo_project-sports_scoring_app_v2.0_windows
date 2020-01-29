@@ -2,6 +2,8 @@
 
 ### An app for showing teams and fixtures in a league
 
+![](readme_images/screenshot01-home.png)
+
 This is version 2.0.
 
 I created version 1.0 using Ruby and Sinatra as my first project during week 5 (August 2019) of the CodeClan Professional Software Development course.
@@ -64,22 +66,27 @@ ruby db/seeds.rb
 ```
 
 
-## How it works and what it does
+## App Details
 
-- 
+- From Home you can select to view the Teams list, the Fixtures list, or the League Table. You can also navigate straight to the Add Team page.
 
-Screenshot
-
-- 
+- The Teams page lists all Teams in the League. You can edit or delete an individual Team, view the Team details, or add a Team to the League.
 
 Screenshot
+![](readme_images/screenshot02-teams.png)
 
-- 
+- The Fixtures page lists all the Fixtures between Teams in the League. You can edit the Teams in a Fixture and who the winning and losing Teams are, or delete a Fixture.
 
 Screenshot
+![](readme_images/screenshot03-fixtures.png)
+
+- The League Table page shows the Teams displayed by Points awarded.
+
+Screenshot
+![](readme_images/screenshot04-league-table.png)
 
 
-Status of the app as of 28th January 2020:
+Status of the app and plans for further development as of 29th January 2020:
 - The framework of the Home, Teams, Fixtures, League Table and About pages is complete. The data is displayed as per the design.
 - The individual Team pages do not show any information other than the Team name. I plan to display all the Fixtures for that Team on this page, displaying whether they won or lost.
 - The Add Fixture functionality is not finished. It initially worked with the user manually typing in the team ID numbers, however recent updates to the app have removed this functionality. I plan to provide a list with all teams in the database from which the user will select two, and then a winner and a loser from these. The ADD FIXTURE button will post this to the database and the Fixture will be added to the list on the Fixtures page. This will also increase the Teams' played, won, lost and points entries as appropriate, which will update the League Table.

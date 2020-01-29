@@ -8,7 +8,7 @@
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
   
-@media(min-width:500px){
+@media(min-width:500px) {
     .header-and-nav {
         margin-bottom: 30px;
     }
@@ -50,265 +50,275 @@
         background: var(--dark);
         color: var(--primary-blue);
     }
-}
+
   
-/* Core Styles */
-html {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--dark);
-    list-style: none;
-}
-  
-body {
-    background: #abcad6;
-    margin: 30px 50px;
-    line-height: 1.4;
-}
-  
-#page-container {
-    position: relative;
-    min-height: 90vh;
-}
-  
-#content-wrap {
-    padding-bottom: 1rem;
-}
-  
-.footer {
-    position: absolute;
-    bottom: 0;
-    height: 0.5rem;
-    text-align: left;
-    font-size: 0.8rem;
-}  
-  
-/* Homepage Container */
-.homepage-container {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-      'main-box-a main-box-b';
-    margin-top: 4rem;
-}
-  
-.homepage-list ul {
-    list-style: none;
-}
-  
-.homepage-list a {
-    background: var(--primary-blue);
-    display: block;
-    max-width: 50%;
-    text-decoration: none;
-    padding: 0.5rem;
-    text-align: left;
-    color: var(--dark);
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    box-shadow: var(--shadow);
-}
-  
-.homepage-list a:hover {
-    background: var(--dark);
-    color: var(--primary-blue);
-}
+    /* Core Styles */
+    html {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--dark);
+        list-style: none;
+    }
+    
+    body {
+        background: #abcad6;
+        margin: 30px 50px;
+        line-height: 1.4;
+    }
+    
+    #page-container {
+        position: relative;
+        min-height: 90vh;
+    }
+    
+    #content-wrap {
+        padding-bottom: 1rem;
+    }
+    
+    .footer {
+        position: absolute;
+        bottom: 0;
+        height: 0.5rem;
+        text-align: left;
+        font-size: 0.8rem;
+    }  
+    
+    /* Homepage Container */
+    .homepage-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+        'main-box-a main-box-b';
+        margin-top: 4rem;
+    }
+    
+    .homepage-list ul {
+        list-style: none;
+    }
+    
+    .homepage-list a {
+        background: var(--primary-blue);
+        display: block;
+        max-width: 50%;
+        text-decoration: none;
+        padding: 0.5rem;
+        text-align: left;
+        color: var(--dark);
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        box-shadow: var(--shadow);
+    }
+    
+    .homepage-list a:hover {
+        background: var(--dark);
+        color: var(--primary-blue);
+    }
 
-.homepage-text {
-    text-align: left;
-    margin-top: 40px;
-    margin-right: 50px;
-    padding: 15px;
-    border: 0.5px solid var(--dark);
-    box-shadow: var(--shadow);
-}
-  
-/* Header */
-.header {
-    grid-area: header;
-    min-height: 10px;
-    padding: 0.8rem;
-}
-  
-/* Fixtures */
-.add-fixture {
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
+    .homepage-text {
+        text-align: left;
+        margin-top: 40px;
+        margin-right: 50px;
+        padding: 15px;
+        border: 0.5px solid var(--dark);
+        box-shadow: var(--shadow);
+    }
+    
+    /* Header */
+    .header {
+        grid-area: header;
+        min-height: 10px;
+        padding: 0.8rem;
+    }
+    
+    /* Fixtures */
+    .add-fixture {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
 
-.fixtures-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 600px;
-    border: 0.5px solid var(--dark);
-    box-shadow: var(--shadow);
-}
+    .fixtures-container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 600px;
+        border: 0.5px solid var(--dark);
+        box-shadow: var(--shadow);
+    }
 
-.fixtures-container-top-row {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-gap: 10px;
-    grid-template-areas:
-        "team-a vs team-b";
-    justify-items: center;
-    padding: 20px;
-}
+    .fixtures-container-top-row {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-gap: 10px;
+        grid-template-areas:
+            "team-a vs team-b";
+        justify-items: center;
+        padding: 20px;
+    }
 
-.fixtures-container-middle-row {
-    display: grid;
-    justify-items: center;
-}
+    .fixtures-container-middle-row {
+        display: grid;
+        justify-items: center;
+    }
 
-.fixtures-container-bottom-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "btn-edit btn-delete";
-}
+    .fixtures-container-bottom-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "btn-edit btn-delete";
+    }
 
-.team-a {
-    grid-area: team-a;
-    color: var(--dark);
-    font-weight: bolder;
-    padding: 10px;
-    text-align: center;
-}
-  
-.team-b {
-    grid-area: team-b;
-    color: var(--dark);
-    font-weight: bolder;
-    padding: 10px;
-    text-align: center;
-}
+    .team-a {
+        grid-area: team-a;
+        color: var(--dark);
+        font-weight: bolder;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .team-b {
+        grid-area: team-b;
+        color: var(--dark);
+        font-weight: bolder;
+        padding: 10px;
+        text-align: center;
+    }
 
-.vs {
-    grid-area: vs;
-    color: var(--dark);
-    font-size: 0.9rem;
-    font-style: italic;
-    padding: 10px;
-}
+    .vs {
+        grid-area: vs;
+        color: var(--dark);
+        font-size: 0.9rem;
+        font-style: italic;
+        padding: 10px;
+    }
 
-.winner-text {
-    font-style: italic;
-    padding: 5px;
-    margin-top: 10px;
-}
+    .winner-text {
+        font-style: italic;
+        padding: 5px;
+        margin-top: 10px;
+    }
 
-.winner-team {
-    color: var(--dark-blue);
-    font-weight: bolder;
-    border-bottom: 1px solid var(--dark);
-    padding: 5px;
-    margin-bottom: 20px;
-}
-  
-/* Teams Page */
-.add-team {
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
+    .winner-team {
+        color: var(--dark-blue);
+        font-weight: bolder;
+        border-bottom: 1px solid var(--dark);
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    
+    /* Teams Page */
+    .add-team {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
 
-.teams-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 600px;
-    border: 0.5px solid var(--dark);
-    box-shadow: var(--shadow);
-}
+    .teams-container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 600px;
+        border: 0.5px solid var(--dark);
+        box-shadow: var(--shadow);
+    }
 
-.teams-container-top-row {
-    display: grid;
-    justify-items: center;
-    padding: 20px;
-}
+    .teams-container-top-row {
+        display: grid;
+        justify-items: center;
+        padding: 20px;
+    }
 
-.teams-container-middle-row {
-    display: grid;
-}
+    .teams-container-middle-row {
+        display: grid;
+    }
 
-.teams-container-bottom-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "btn-edit-team btn-delete-team";
-}
+    .teams-container-bottom-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "btn-edit-team btn-delete-team";
+    }
 
-.team-name {
-    color: var(--dark);
-    font-weight: bolder;
-    padding: 20px;
-    text-align: center;
-}
+    .team-name {
+        color: var(--dark);
+        font-weight: bolder;
+        padding: 20px;
+        text-align: center;
+    }
 
-/* League Table Page */
-.league-table-container {
-    margin-top: 30px;
-    color: var(--dark);
-}
+    /* League Table Page */
+    .league-table-container {
+        margin-top: 30px;
+        color: var(--dark);
+    }
 
-.league-table {
-    border: 0.5px solid var(--dark);
-    width: 600px;
-    box-shadow: var(--shadow);
-}
+    .league-table {
+        border: 0.5px solid var(--dark);
+        width: 600px;
+        box-shadow: var(--shadow);
+    }
 
-.league-table-top-row {
-    width: 600px;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "league-table-position league-table-team-name league-table-team-played league-table-team-won league-table-team-lost league-table-team-points";
-    font-weight: bolder;
-}
+    .league-table-top-row {
+        width: 600px;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "league-table-position league-table-team-name league-table-team-played league-table-team-won league-table-team-lost league-table-team-points";
+        font-weight: bolder;
+    }
 
-.league-table-team-entry {
-    width: 600px;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "league-table-position league-table-team-name league-table-team-played league-table-team-won league-table-team-lost league-table-team-points";
-}
+    .league-table-team-entry {
+        width: 600px;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "league-table-position league-table-team-name league-table-team-played league-table-team-won league-table-team-lost league-table-team-points";
+    }
 
-.league-table-position {
-    border: 0.5px solid var(--dark);
-    text-align: center;
-    font-weight: bolder;
-    padding: 5px;
-}
+    .league-table-position {
+        border: 0.5px solid var(--dark);
+        text-align: center;
+        font-weight: bolder;
+        padding: 5px;
+    }
 
-.league-table-team-name {
-    border: 0.5px solid var(--dark);
-    justify-items: left;
-    padding: 5px;
-}
+    .league-table-team-name {
+        border: 0.5px solid var(--dark);
+        justify-items: left;
+        padding: 5px;
+    }
 
-.league-table-team-played {
-    border: 0.5px solid var(--dark);
-    justify-items: center;
-    text-align: center;
-    padding: 5px;
-}
+    .league-table-team-played {
+        border: 0.5px solid var(--dark);
+        justify-items: center;
+        text-align: center;
+        padding: 5px;
+    }
 
-.league-table-team-won {
-    border: 0.5px solid var(--dark);
-    justify-items: center;
-    text-align: center;
-    padding: 5px;
-}
+    .league-table-team-won {
+        border: 0.5px solid var(--dark);
+        justify-items: center;
+        text-align: center;
+        padding: 5px;
+    }
 
-.league-table-team-lost {
-    border: 0.5px solid var(--dark);
-    justify-items: center;
-    text-align: center;
-    padding: 5px;
-}
+    .league-table-team-lost {
+        border: 0.5px solid var(--dark);
+        justify-items: center;
+        text-align: center;
+        padding: 5px;
+    }
 
-.league-table-team-points {
-    border: 0.5px solid var(--dark);
-    justify-items: center;
-    text-align: center;
-    padding: 5px;
-}  
+    .league-table-team-points {
+        border: 0.5px solid var(--dark);
+        justify-items: center;
+        text-align: center;
+        padding: 5px;
+    }
+
+    /* About Page */
+    .about-text {
+        margin-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 0.5px solid var(--dark);
+        box-shadow: var(--shadow);
+    }
+}
