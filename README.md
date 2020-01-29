@@ -71,6 +71,7 @@ ruby db/seeds.rb
 - From Home you can select to view the Teams list, the Fixtures list, or the League Table. You can also navigate straight to the Add Team page.
 
 - The Teams page lists all Teams in the League. You can edit or delete an individual Team, view the Team details, or add a Team to the League.
+
 ![](readme_images/screenshot02-teams.png)
 
 - The Fixtures page lists all the Fixtures between Teams in the League. You can edit the Teams in a Fixture and who the winning and losing Teams are, or delete a Fixture.
@@ -80,6 +81,8 @@ ruby db/seeds.rb
 - The League Table page shows the Teams displayed by Points awarded.
 
 ![](readme_images/screenshot04-league-table.png)
+
+
 
 
 Status of the app and plans for further development as of 29th January 2020:
