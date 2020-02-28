@@ -7,7 +7,9 @@
     <label>
     Select Team A:
       <div>
-
+      <% @teams.each do |team| %>
+        <a class="team-a-list-name"><%= team.name %></a>
+      <% end %>
       </div>
     </label>
 
