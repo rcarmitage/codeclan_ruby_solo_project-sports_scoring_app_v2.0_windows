@@ -10,7 +10,7 @@ gem 'pg'
 gem 'rack'
 gem 'sinatra'
 gem 'require_all'
-gem 'activerecord', '5.2.4.5', require: 'active_record'
+gem 'activerecord', '6.1.7.1', require: 'active_record'
 gem 'sinatra-activerecord'
 
 # group :development do
